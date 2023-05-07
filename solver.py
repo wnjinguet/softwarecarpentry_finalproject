@@ -8,11 +8,15 @@ def new_game():
     question_number = 1
     
     # display all the questions in the library using a for loop
+    # the dashes seperate the questions
     
-    for key in questions:
+    for key in library:
         print("---------")
         print(key)
-        
+     # show all the options possible for each question using a nested for loop
+        for i in options:
+            print(i)
+     
 def check_answer():
   pass
 def display_score():
@@ -21,7 +25,7 @@ def play_again():
   pass
 
 # create a library of questions to be asked during the game
-question = {
+library = {
 "A very high value of K indicates that: ": "B",
 "What is the pH of a 10–5 M KOH solution?: ": "C",
 "Active metals react with certain acids, such as hydrochloric acid, to yield a metal compound and: ": "A",
@@ -33,7 +37,7 @@ mol of hydrogen?: ": "B",
 
 # create a list of list. Each list corresponds to a value in the library of questions that were previously created 
 
-options = [["A. reactants are favored", "B. equilibrium is reached slowly", "C. products are favored", "D. equilibrium has been reached"],
+answers = [["A. reactants are favored", "B. equilibrium is reached slowly", "C. products are favored", "D. equilibrium has been reached"],
           ["A. 5", "B. 3", "C. 9", "D. 11"],
           ["A. chlorine", "B. oxygen", "C. hydrogen", "D. sodium"],
           ["A. 0, "B. 2 mol", "C. 3 mol", "D. 1 mol"],
