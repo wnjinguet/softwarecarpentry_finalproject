@@ -1,5 +1,5 @@
-#The goal of this code is to create and run a quiz game in python using some key concepts learn throughout the semester
-#First we define the different functions that will be used in this game.
+# The goal of this code is to create and run a quiz game in python using some key concepts learn throughout the semester
+# First we define the different functions that will be used in this game.
 
 def new_game(): 
 
@@ -25,13 +25,19 @@ def new_game():
         guess = guess.upper()
         guessess.append(guess)
         
-        check_answer(questions.get(key),guess)
+        correct_guessess += check_answer(questions.get(key),guess)
         
        # to increment the question number each time  
        
         question_num += 1 
+        
+     # to display a final score
      
-def check_answer(answe, guess):
+     display_score(correct_guesses, guesses)
+     
+## new class function 
+
+def check_answer(answer, guess):
 
 # check if the answer is the same as the guess 
     
