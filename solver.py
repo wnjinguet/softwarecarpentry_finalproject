@@ -10,7 +10,7 @@ def display_score():
 def play_again():
   pass
 
-
+# create a library of questions to be asked during the game
 question = {
 "A very high value of K indicates that: ": "B",
 "What is the pH of a 10–5 M KOH solution?: ": "C",
@@ -23,3 +23,5 @@ mol of hydrogen?: ": "B",
 "Enthalpy change is the: ": "B",
 "If the concentration of reactants is higher: ": "D",
 "If the concentration of reactants is higher: ": "A",
+
+# create a list of list. Each list corresponds to a value in the library of questions that were previously created 
