@@ -1,5 +1,8 @@
 # The goal of this code is to create and run a quiz game in python using some key concepts learned throughout the semester
-# First we define the different functions that will be used in this game.
+# First I define the different functions that will be used in this game.
+# Later I create a library and answer choices for the game.
+# Afterwards, the there is a portion that reveals the user's score. Base on that score, they either a celebratory message or a message prompting them tocontinue to ractice, base on their score. 
+# After several trials, the user's scores are graphed to visually show progress 
 
 import matplotlib.pyplot as plt
 
