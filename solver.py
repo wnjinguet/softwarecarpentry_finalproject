@@ -54,11 +54,39 @@ def check_answer(answer, guess):
        else:
            print("WRONG ANSWER!")
            return 0 
-  pass
-def display_score():
-  pass
+           
+## new class function
+
+def display_score(correct_guesses,guesses):
+    print("--------")
+    print("RESULTS")
+    print("--------")
+    
+    print("Answers:", end="")
+    for i in questions:
+        print(questions.get(i),end=" ")
+    print()
+    
+    print("Guesses:",end="")
+    for i in guesses:
+       print(i,end=" ")
+    print()
+    
+    score = int((correct_guesses/len(questions))*100)
+    print("Your score is: "+str(score)+"%")
+    
+    
+## new class function
+
 def play_again():
-  pass
+
+    response = input("Do you want to play again? (yes or no): ")
+    response = response.upper()
+
+    if response == "YES":
+        return True
+    else:
+        return False
 
 # create a library of questions to be asked during the game
 questions = {
@@ -82,6 +110,12 @@ answers = [["A. reactants are favored", "B. equilibrium is reached slowly", "C. 
           
 # create a new game by calling the new game function
 
+new_game()
+
+while play_again():
+    new_game()
+
+print("The End!")
 
 
            
