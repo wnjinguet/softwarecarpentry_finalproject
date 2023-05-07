@@ -19,13 +19,18 @@ question = {
 "For the reaction represented by the equation 2H2 + O2 → 2H2O, how many grams of water are produced from 6.00
 mol of hydrogen?: ": "B",
 "Which of the following is an electrolyte?: ": "A",
-"Which reaction does not occur?: ": "C",
-"Enthalpy change is the: ": "B",
-"If the concentration of reactants is higher: ": "D",
-"If the concentration of reactants is higher: ": "A",
 }
 
 # create a list of list. Each list corresponds to a value in the library of questions that were previously created 
 
 options = [["A. reactants are favored", "B. equilibrium is reached slowly", "C. products are favored", "D. equilibrium has been reached"],
-          ["A. reactants are favored", "B. equilibrium is reached slowly", "C. products are favored", "D. equilibrium has been reached"],
+          ["A. 5", "B. 3", "C. 9", "D. 11"],
+          ["A. chlorine", "B. oxygen", "C. hydrogen", "D. sodium"],
+          ["A. 0, "B. 2 mol", "C. 3 mol", "D. 1 mol"],
+          ["A. 108 g", "B. 2.00 g", "C. 6.00 g", "D. 54.0 g"],
+          ["A. glass", "B. sugar", "C. sodium chloride", "D. pure water"],
+       
+
+
+
+           
