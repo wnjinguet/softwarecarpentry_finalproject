@@ -1,4 +1,4 @@
-# The goal of this code is to create and run a quiz game in python using some key concepts learn throughout the semester
+# The goal of this code is to create and run a quiz game in python using some key concepts learned throughout the semester
 # First we define the different functions that will be used in this game.
 
 def new_game(): 
@@ -10,7 +10,7 @@ def new_game():
     # display all the questions in the library using a for loop
     # the dashes seperate the questions
     
-    for key in library:
+    for key in questions:
         print("---------")
         print(key)
      # show the options possible for each question using a nested for loop
@@ -61,7 +61,7 @@ def play_again():
   pass
 
 # create a library of questions to be asked during the game
-library = {
+questions = {
 "A very high value of K indicates that: ": "B",
 "What is the pH of a 10–5 M KOH solution?: ": "C",
 "Active metals react with certain acids, such as hydrochloric acid, to yield a metal compound and: ": "A",
