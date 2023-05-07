@@ -21,7 +21,7 @@ def new_game():
             
       # for user input, the user is required to type capital leters A-D
       
-        guess = inpute("Enter (A, B, C, or D): ")
+        guess = input("Enter (A, B, C, or D): ")
         guess = guess.upper()
         guessess.append(guess)
         
@@ -33,7 +33,7 @@ def new_game():
         
      # to display a final score
      
-     display_score(correct_guesses, guesses)
+   display_score(correct_guesses, guesses)
      
 ## new class function 
 
@@ -58,25 +58,30 @@ def check_answer(answer, guess):
 ## new class function
 
 def display_score(correct_guesses,guesses):
+    # the lines seperate the questions and answers
     print("--------")
     print("RESULTS")
     print("--------")
-    
     print("Answers:", end="")
+    
+    # to show all the answers, using a for loop
+    
     for i in questions:
-        print(questions.get(i),end=" ")
+        print(questions.get(i), end=" ")
     print()
     
-    print("Guesses:",end="")
+    print("Guesses:", end="")
     for i in guesses:
-       print(i,end=" ")
+       print(i, end=" ")
     print()
     
+    # to calculate the final score
+   
     score = int((correct_guesses/len(questions))*100)
     print("Your score is: "+str(score)+"%")
     
     
-## new class function
+## new class function for the user to play again
 
 def play_again():
 
