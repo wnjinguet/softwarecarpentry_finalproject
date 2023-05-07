@@ -2,7 +2,17 @@
 #First we define the different functions that will be used in this game.
 
 def new_game(): 
-  pass 
+
+    guesses = []
+    correct_guesses = 0
+    question_number = 1
+    
+    # display all the questions in the library using a for loop
+    
+    for key in questions:
+        print("---------")
+        print(key)
+        
 def check_answer():
   pass
 def display_score():
@@ -29,7 +39,8 @@ options = [["A. reactants are favored", "B. equilibrium is reached slowly", "C. 
           ["A. 0, "B. 2 mol", "C. 3 mol", "D. 1 mol"],
           ["A. 108 g", "B. 2.00 g", "C. 6.00 g", "D. 54.0 g"],
           ["A. glass", "B. sugar", "C. sodium chloride", "D. pure water"],
-       
+          
+# create a new game by calling the new game function
 
 
 
