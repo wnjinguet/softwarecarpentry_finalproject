@@ -5,7 +5,7 @@ def new_game():
 
     guesses = []
     correct_guesses = 0
-    question_number = 1
+    question_num = 1
     
     # display all the questions in the library using a for loop
     # the dashes seperate the questions
@@ -13,11 +13,41 @@ def new_game():
     for key in library:
         print("---------")
         print(key)
-     # show all the options possible for each question using a nested for loop
-        for i in options:
+     # show the options possible for each question using a nested for loop
+     # this ensures that not all the answers to all the questions are shown, only that for the specific question
+       
+       for i in options[question_num-1]"
             print(i)
+            
+      # for user input, the user is required to type capital leters A-D
+      
+        guess = inpute("Enter (A, B, C, or D): ")
+        guess = guess.upper()
+        guessess.append(guess)
+        
+        check_answer(questions.get(key),guess)
+        
+       # to increment the question number each time  
+       
+        question_num += 1 
      
-def check_answer():
+def check_answer(answe, guess):
+
+# check if the answer is the same as the guess 
+    
+    if answer == guess:,
+    
+    # message displayed to the user 
+    
+         print("CORRECT ANSWER!")
+         
+         # point attributed to the user for the correct answer 
+         
+          return 1 
+            
+       else:
+           print("WRONG ANSWER!")
+           return 0 
   pass
 def display_score():
   pass
