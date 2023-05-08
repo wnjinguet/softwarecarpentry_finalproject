@@ -1,15 +1,16 @@
-# softwarecarpentry_finalproject
+# softwarecarpentry_finalproject_quiz
 
 The following program is a quiz game that can be used for studying in any given course, synonymous to programs such as Quizlet.
 
 1. Requiresments for running the code
 
-- The installation of the latest version of python
-- The installation of the Matplotlib package in python which can be done in the user's terminal 
+- The installation of a working version of python
+- The installation of the Matplotlib package in python which can be done in the user's terminal. The following video shows detailed steps for installing Matplotlib as well as other packages on Mac: https://www.youtube.com/watch?v=DhFs9sLtrbc
+
 
 2. Explanation of the program
 
-The following quiz studying program was created to help students in their studying, especially during finals. This game takes a series of multiple choice questions and correspoint answer choices and presents them to a user. 
+The following quiz studying program was created to help students in their studying, especially during finals. This game takes a series of multiple choice questions and corresponding answer choices and presents them to a user. 
 
 The user is able to answer the questions by typing letters A-D as their responses. The system instantly grades the answer of the user by comparing it with the key embedded in the program. If the answer entered is incorrect, the system tells the user what the correct answer is.
 
@@ -19,6 +20,7 @@ At the end of the game, the user will be asked if they would like to continue pl
 
 
 3. How to run the code
+
 - Save the code in a text editor on your desktop
 - Open the code in your terminal: "python quiz.py"
 - Answer the questions as presented by entering a letter A-D
