@@ -1,6 +1,6 @@
 # softwarecarpentry_finalproject_quiz
 
-The following program is a quiz game that can be used for studying in any given course, synonymous to programs such as Quizlet.
+The following program is a quiz game that can be used for studying in any given course, synonymous to programs such as Quizlet. The inspiration for the project was the following: https://realpython.com/python-quiz-application/
 
 1. Requiresments for running the code
 
