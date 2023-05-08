@@ -15,7 +15,8 @@ The user is able to answer the questions by typing letters A-D as their response
 
 Once the user answers all the questions, their percentage score is generated. After each game, the user is asked what their score was. Once entered, if the score is greater than 75%, the user receives a congratulatory message.
 
-If the score is less thatn 75%, then the user will be prompted to continue practicing. The user will also be asked at the end if they would like to continue playing and giving an option of yes or no. If answered yes, the game continues. If answer no, but the score was less than 75%, then the user will get a "keep practicing" message and the game will keep going one more round and then it will stop. After three trials, the user is asked to enter their scores. Using Matplotib, a graph is then generated to show the progress across three trials. 
+At the end of the game, the user will be asked if they would like to continue playing. If answered yes, the game continues. If no, and the score is less that 75%, then the user will be prompted to continue practicing. After three trials, the game will stop. The user is asked to enter their scores. Using Matplotib, a graph is then generated to show the progress across the trials.
+
 
 3. How to run the code
 - Save the code in a text editor on your desktop
