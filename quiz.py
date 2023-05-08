@@ -3,7 +3,6 @@
 # Later I create a library and answer choices for the game.
 # Afterwards, the there is a portion that reveals the user's score. Base on that score, they either a celebratory message or a message prompting them tocontinue to ractice, base on their score. 
 # After several trials, the user's scores are graphed to visually show progress 
-
 import matplotlib.pyplot as plt
 
 def new_game():
@@ -55,6 +54,7 @@ def check_answer(answer, guess):
         return 1
     else:
         print("INCCORECT ANSWER!")
+        print("The correct answer was: "+answer)
         return 0
 
 # new class function
@@ -122,6 +122,8 @@ new_game()
 while play_again():
     new_game()
 
+print("The End!")
+
 # to give feedback to the player
 
 score = float(input("Enter your quiz score (out of 100): "))
@@ -131,17 +133,22 @@ if score >= 75:
 else:
     print("Sorry, you didn't score 75% or higher. Keep practicing!🙂")
 
-new_game()
-
-while play_again():
     new_game()
 
-new_game()
+    while play_again():
+        new_game()
 
-while play_again():
+score = float(input("Enter your quiz score (out of 100): "))
+
+if score >= 75:
+    print("Congratulations! 🥳 You scored 75% or higher!")
+else:
+    print("Sorry, you didn't score 75% or higher. Keep practicing!🙂")
+
     new_game()
 
-print("The End!")
+    while play_again():
+        new_game()
 
 # to graph the scores
 
@@ -163,12 +170,6 @@ plt.title("Scores")
 plt.xlabel("Trial Number")
 plt.ylabel("Score")
 plt.show()
-
-
-while play_again():
-    new_game()
-
-print("The End!")
 
 
            
