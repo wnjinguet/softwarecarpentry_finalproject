@@ -30,3 +30,4 @@ At the end of the game, the user will be asked if they would like to continue pl
 
 Images have been added to demonstrate what the output should be. A plot has been added to the repository as a reference for the plot that will be generated. 
 
+As a final note, most of my work was done in sublime as I wanted to make sure that the code ran as I went on. So all the updates may not be visible in my history here on Github. 
